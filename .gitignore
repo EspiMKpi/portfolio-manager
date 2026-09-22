@@ -1,0 +1,65 @@
+# ==============================================================================
+# Multi-Project Root .gitignore
+# Guards against git bloat when syncing between Laptop and PC
+# ==============================================================================
+
+# Ensure Antigravity Agent skills and rules are ALWAYS tracked
+!.agents/
+!.agents/**
+
+# Machine Learning & AI: Model Weights & Checkpoints (Keep local on PC)
+*.pt
+*.pth
+*.h5
+*.hdf5
+*.bin
+*.onnx
+*.ckpt
+*.pb
+checkpoints/
+weights/
+runs/
+wandb/
+.tensorboard/
+
+# Datasets & Large Data Archives (Use DVC or cloud drive)
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.parquet
+data/raw/
+data/processed/
+
+# Python Virtual Environments & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Android Studio & Gradle Build Artifacts
+.gradle/
+build/
+app/build/
+*.apk
+*.aab
+*.ap_
+local.properties
+.cxx/
+captures/
+
+# IDE & Editor Specific
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
